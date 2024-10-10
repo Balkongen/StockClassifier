@@ -1,6 +1,6 @@
 # StockClassifier
 
-A small project for experimenting with different machine learning techniques on stock data.
+A small project for experimenting with different machine learning techniques on stock data. This is mainly for learning so there are probably some mistakes.
 
 ## Installation
 
