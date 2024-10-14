@@ -3,7 +3,7 @@ import numpy as np
 
 def prepare_data(short_day, mid_day, long_day, change_factor):
     column_order = ['Date', 'Bid', 'Ask', 'Opening price', 'High price', 'Low price', 'Closing price', 'Average price', 'Total volume', 'Turnover', 'Trades']
-    data = pd.read_csv("../data/SHB_A-1999-01-06-2024-02-05.csv", sep=";", decimal=",", skiprows=1, usecols=column_order)
+    data = pd.read_csv("../data/SHB_A-1999-01-07-2024-10-11.csv", sep=";", decimal=",", skiprows=1, usecols=column_order)
     
     data = data.iloc[::-1]
     data.dropna()
