@@ -7,7 +7,7 @@ A small project for experimenting with different machine learning techniques on 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/StockClassifier.git
+    git clone https://github.com/Balkongen/StockClassifier
     cd StockClassifier
     ```
 
@@ -16,5 +16,3 @@ A small project for experimenting with different machine learning techniques on 
     ```bash
     pip install -r requirements.txt
     ```
-
-
