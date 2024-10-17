@@ -13,10 +13,18 @@ class RL:
         # return profit/loss as reward?
         return None
     
+    
+    def is_terminal_state(date: str) -> bool:
+        return None
+
 
     def get_next_action(self, current_state: int, epsilon: float) -> int:
-        
+        # TODO Prevent illegal action
         if np.random.random() > epsilon:
             return np.argmax(self.Q[current_state])  # Exploit best-known action
         else:
             return np.random.randint(self.Q.shape[1])  # Explore with random action
+        
+
+def run(number_of_episodes, epsilone = 0, discount_factor = 0.2, learning_rate = 0.9):
+    return None
