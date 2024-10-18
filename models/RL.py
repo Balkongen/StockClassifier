@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from prepare_data import prepare_data
 
 
 class RL:
@@ -27,4 +28,21 @@ class RL:
         
 
 def run(number_of_episodes, epsilone = 0, discount_factor = 0.2, learning_rate = 0.9):
+    data = prepare_data(5, 20, 50, 0.014)
+
+    data = data.iloc[4500:] # Remove some data
+    actions = ["buy", "hold", "sell"]
+    env = RL(data=data)
+
+    total_profit = 0
+    number_of_trades = 0
+
+    for episode in range(number_of_episodes):
+
+
+        while not env.is_terminal_state(data["Date"]):
+            return
+
+
+    
     return None
