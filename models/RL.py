@@ -12,7 +12,7 @@ class RL:
 
     def get_reward(self, date, action) -> int:
         # return profit/loss as reward?
-        
+        # return reward direct or during iteration?
         return None
     
     
@@ -53,7 +53,7 @@ def run(number_of_episodes, epsilone = 0, discount_factor = 0.2, learning_rate =
             print(current_date)
             
             
-            action = env.get_next_action()
+            action = env.get_next_action(None, epsilone) # FIXME Set proper state
             reward = env.get_reward(current_date, action)
             
             
